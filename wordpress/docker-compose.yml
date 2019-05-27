@@ -1,0 +1,14 @@
+version: '3'
+services:
+        wordpress:
+                build: .
+                ports:
+                        - "80:80"
+                environment:
+                        WORDPRESS_DB_PASSWORD: huehue123
+        mysql:
+                image: "mysql:5.7"
+                environment:
+                        MYSQL_ROOT_PASSWORD: huehue123
+
+
